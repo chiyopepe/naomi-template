@@ -1,50 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meet Naomi</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campaign-style Landing — Template</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <section class="meet-naomi">
-    <div class="container">
-      <div class="left-content">
-        <p class="section-title">THE PLATFORM</p>
-        <h1>
-          Meet Naomi.<br />
-          A leader who listens,<br />
-          and serves the community.
-        </h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo-title">NAOMI</div>
+        <div class="logo-sub">FOR MAYOR</div>
       </div>
-
-      <div class="right-content">
-        <div class="bio-section">
-          <h2>Community Leadership</h2>
-          <p>
-            Naomi Howard is a public servant dedicated to building strong neighborhoods and promoting fairness.
-            Her work focuses on ensuring opportunity and accountability across the community.
-          </p>
-        </div>
-
-        <div class="bio-section">
-          <h2>Experience & Service</h2>
-          <p>
-            From education to housing advocacy, Naomi’s efforts have consistently supported working families.
-            She believes every person deserves access to safe housing, quality education, and a voice in local decisions.
-          </p>
-        </div>
-
-        <div class="bio-section">
-          <h2>Education & Background</h2>
-          <p>
-            Naomi holds degrees in public policy and community development.
-            Her experience combines academic insight with grassroots involvement, ensuring balanced and thoughtful leadership.
-          </p>
-        </div>
-      </div>
+      <nav class="nav">
+        <a href="#about">ABOUT</a>
+        <a href="#issues">ISSUES</a>
+        <a href="#get-involved">GET INVOLVED</a>
+      </nav>
     </div>
-  </section>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="hero-title">Naomi for <span class="emph">NOW</span> &amp; <span class="emph">Future!</span></h1>
+          <p class="hero-sub">Support our campaign-style site — replace this text with permitted language.</p>
+          <div class="hero-cta">
+            <!-- placeholder link - replace with appropriate non-political or approved donation URL -->
+            <a class="btn primary" href="#" role="button" aria-label="Donate (placeholder)">DONATE</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="portrait-card">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9e6a5f4f7dd523a0f1b3c7c2b5f2f2c2" alt="Portrait photo placeholder" />
+            <div class="portrait-caption">Candidate portrait (placeholder)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT / MEET -->
+    <section id="about" class="section white-section">
+      <div class="container two-col">
+        <div class="col-left">
+          <h2>Meet Naomi</h2>
+          <p><strong>Naomi Howard</strong> is a public servant focused on community leadership and service. Replace this paragraph with a factual biography that follows your compliance guidelines.</p>
+          <p>Education, professional background, and community involvement live here. Keep language neutral and factual as required.</p>
+        </div>
+        <aside class="col-right portrait-2">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=9e6a5f4f7dd523a0f1b3c7c2b5f2f2c2" alt="Portrait placeholder" />
+        </aside>
+      </div>
+    </section>
+
+    <!-- ISSUES / WHY -->
+    <section id="issues" class="section pale-section">
+      <div class="container">
+        <h2>Why Support</h2>
+        <ul class="issues-list">
+          <li>
+            <h3>Affordable housing</h3>
+            <p>Placeholder text: describe high-level goals and programs that your organization supports.</p>
+          </li>
+          <li>
+            <h3>Cost of living</h3>
+            <p>Placeholder text: describe plans or priorities in a neutral, factual style.</p>
+          </li>
+          <li>
+            <h3>Public transport</h3>
+            <p>Placeholder text: describe investments, improvements, or community services you support.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GET INVOLVED -->
+    <section id="get-involved" class="section white-section">
+      <div class="container two-col">
+        <div class="col-left">
+          <h2>Get Involved</h2>
+          <p>Join mailing lists, volunteer, or learn more. Replace these with allowed calls-to-action for your organization.</p>
+          <a class="btn outline" href="#" role="button">Volunteer</a>
+        </div>
+        <div class="col-right">
+          <h3>Contact</h3>
+          <p>Email: info@example.org<br/>Phone: (555) 555-5555</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Organization / Template — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script for year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
